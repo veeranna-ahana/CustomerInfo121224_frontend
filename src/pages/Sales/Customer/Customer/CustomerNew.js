@@ -182,9 +182,9 @@ function CreateCustomer() {
     e.preventDefault();
     let newCustName = e.target.elements.newCustName.value.trimEnd();
     let branchName = e.target.elements.branchName.value.trimEnd();
-    const spformat = /[!@#$%^*_+\-= \[\] {};:"\\|,<>\/?]+/;
-
-    if (!newCustName || newCustName.match(spformat)) {
+     const spformat = /^[a-zA-Z]+( [a-zA-Z]+)*$/;
+    const trimmedName = newCustName.trim();
+    if (!trimmedName || trimmedName.match(spformat)) {
       toast.error("Customer Name cannot be blank or have special characters");
       setAlertModal(false);
       return;

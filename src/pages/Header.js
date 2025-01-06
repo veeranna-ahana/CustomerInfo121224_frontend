@@ -119,8 +119,8 @@ function Header() {
 	const logout = () => {
 		Cookies.remove("userData");
 		//window.location.replace("http://172.16.20.61:3000/");
-		window.location.replace("http://localhost:3000/");
-		// window.location.replace("http://192.168.1.25:9000/");
+		//window.location.replace("http://localhost:3000/");
+		 window.location.replace("http://192.168.1.25:9000/");
 	};
 
 	const [anchorEl, setAnchorEl] = useState(null);

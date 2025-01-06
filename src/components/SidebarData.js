@@ -230,9 +230,9 @@ export const customerSidebar = [
 		//path: "#", // Set path to '#' or simply omit it
 		onClick: () => {
 			console.log("Navigating to port 3000/salesHome");
-			window.location.href = "http://localhost:3000/salesHome";
+			//window.location.href = "http://localhost:3000/salesHome";
 			//window.location.href = "http://172.16.20.61:3000/salesHome";
-			// window.location.href = "http://192.168.1.25:9000/salesHome";
+			 window.location.href = "http://192.168.1.25:9000/salesHome";
 		},
 		icon: <MdIcon.MdPreview />,
 		iconClosed: <RiIcons.RiArrowDownSFill />,
